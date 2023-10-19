@@ -6,19 +6,19 @@
 #include <string.h>
 
 /**
- * struct lists_s -singly linked list
+ * struct lists_s - singly linked list
  * @str: string - (malloc'ed string)
  * @len: length of the string
  * @next: points of the next node
  *
- * description: singly linked list node structure
+ * Description: singly linked list node structure
  */
- typedef struct lists_s
- {
- char *str;
- unsigned int len;
- struct list_s *next;
- } list_t;
+typedef struct lists_s
+{
+char *str;
+unsigned int len;
+struct list_s *next;
+} list_t;
 
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
